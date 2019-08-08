@@ -1,0 +1,19 @@
+# Quy trình
+![image](https://user-images.githubusercontent.com/45547213/62693327-7bb70580-b9fc-11e9-93bc-2c9ecac2d009.png)
+
+- B1: app thứ 3 gửi yêu cầu lên Oauth là muốn làm cái này
+- B2: Oauth yêu cầu sự cấp phép từ phía người dùng
+- B3: Người dùng đăng nhập 
+- B4: Oauth nhận thông tin đăng nhập mã hóa ra 1 token rồi gửi cho app
+- B5: App gửi token cho gmail server
+- B6: gmail server nhận token và gửi lại về cho Oauth giải mã
+- B7: Oauth nhận token rồi giải mã ra xem có đúng không rồi confirm lại cho gmail
+- B8:gmail okke
+
+# Các thành phần 
+![image](https://user-images.githubusercontent.com/45547213/62696034-cab36980-ba01-11e9-9812-dbda2d6e0de1.png)
+
+- Oauth provider: hay còn gọi là OAuth server
+- Resources Provider: là bên cung cấp resources đó là cái gmail đó
+- Resources Owner: là người dùng
+- Client: là cái web thứ 3 đó
