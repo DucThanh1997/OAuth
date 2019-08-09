@@ -1,0 +1,5 @@
+# Khi access token hết hạn
+- Client Gửi refresh token lên OAuth Provider qua author endpoint
+- Nhận về access token và refresh token mới
+
+# Implicit flow
